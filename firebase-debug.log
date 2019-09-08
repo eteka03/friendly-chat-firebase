@@ -1,0 +1,36 @@
+[debug] [2019-09-08T09:39:37.462Z] ----------------------------------------------------------------------
+[debug] [2019-09-08T09:39:37.466Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\eteka\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-09-08T09:39:37.466Z] CLI Version:   7.3.0
+[debug] [2019-09-08T09:39:37.466Z] Platform:      win32
+[debug] [2019-09-08T09:39:37.466Z] Node Version:  v10.15.3
+[debug] [2019-09-08T09:39:37.484Z] Time:          Sun Sep 08 2019 05:39:37 GMT-0400 (GMT-04:00)
+[debug] [2019-09-08T09:39:37.484Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-08T09:39:37.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-08T09:39:37.501Z] > authorizing via signed-in user
+[debug] [2019-09-08T09:39:37.502Z] [iam] checking project friendlychat-41176 for permissions ["firebase.projects.get"]
+[debug] [2019-09-08T09:39:37.504Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-08T09:39:37.504Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-08T09:39:37.823Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-08T09:39:37.833Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-41176:testIamPermissions  
+
+[debug] [2019-09-08T09:39:38.250Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-08T09:39:38.251Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-41176  
+ 
+[debug] [2019-09-08T09:39:38.615Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\eteka\friendly-chat-firebase\web-start'...
+[info] 
+[debug] [2019-09-08T09:39:38.621Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-41176/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5001
+[debug] [2019-09-08T09:39:39.110Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "C:\Users\eteka\friendly-chat-firebase\web-start\functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: ./public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-09-08T09:39:40.025Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\eteka\\friendly-chat-firebase\\web-start\\functions","node_version":"10.15.3"}
+[debug] [2019-09-08T09:39:40.025Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
